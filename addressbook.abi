@@ -14,6 +14,21 @@
             ]
         },
         {
+            "name": "eraseakk",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "findage",
+            "base": "",
+            "fields": [
+                {
+                    "name": "age",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
             "name": "insert",
             "base": "",
             "fields": [
@@ -22,16 +37,8 @@
                     "type": "name"
                 },
                 {
-                    "name": "first_name",
-                    "type": "string"
-                },
-                {
-                    "name": "last_name",
-                    "type": "string"
-                },
-                {
                     "name": "age",
-                    "type": "uint32"
+                    "type": "uint64"
                 }
             ]
         },
@@ -44,23 +51,10 @@
                     "type": "name"
                 },
                 {
-                    "name": "first_name",
-                    "type": "string"
-                },
-                {
-                    "name": "last_name",
-                    "type": "string"
-                },
-                {
                     "name": "age",
                     "type": "uint32"
                 }
             ]
-        },
-        {
-            "name": "upsert",
-            "base": "",
-            "fields": []
         }
     ],
     "actions": [
@@ -70,19 +64,24 @@
             "ricardian_contract": ""
         },
         {
-            "name": "insert",
-            "type": "insert",
+            "name": "eraseakk",
+            "type": "eraseakk",
             "ricardian_contract": ""
         },
         {
-            "name": "upsert",
-            "type": "upsert",
+            "name": "findage",
+            "type": "findage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "insert",
+            "type": "insert",
             "ricardian_contract": ""
         }
     ],
     "tables": [
         {
-            "name": "people",
+            "name": "peopletwo",
             "type": "person",
             "index_type": "i64",
             "key_names": [],
